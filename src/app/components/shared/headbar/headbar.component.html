@@ -1,0 +1,27 @@
+<section class="hero is-primary is-small animated slideInDown">
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+                <div class="nav-left">
+                    <a class="nav-item pacifico medium-text">Sennit</a>
+                </div>
+                <span class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div class="nav-right nav-menu">
+                    <a class="nav-item">Bem vindo, {{ user }}</a>
+                    <span class="nav-item">
+                      <a class="button is-primary is-inverted" (click)="logout()">
+                          <span class="icon">
+                              <i class="fa fa-power-off"></i>
+                          </span>
+                        <span>Sair</span>
+                    </a>
+                    </span>
+                  </div>
+            </div>
+        </header>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+<app-headbar></app-headbar>
+
+<section  class="section"  *ngIf="!isAdmin">
+    <div class="container">
+        <div class="heading animated fadeIn">
+            <h1 class="title">Tela de cadastro de cupons.</h1>
+            <h2 class="subtitle">
+               Cadadastre seus cupons e veja se foi premiado.
+            </h2>
+        </div>
+        <app-coupons></app-coupons>     
+    </div>
+</section>
+
+<section  class="section"  *ngIf="isAdmin">
+    <div class="container">
+        <div class="heading animated fadeIn">
+            <h1 class="title">Área administrativa</h1>
+            <h2 class="subtitle">
+               Acompanhe por aqui todas informações de cupons e participantes
+            </h2>
+        </div>
+        <br>
+        <br>
+        <app-sub-menu></app-sub-menu>
+    </div>
+</section>
+
+<app-footer></app-footer>
